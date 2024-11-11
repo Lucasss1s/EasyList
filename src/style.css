@@ -1,23 +1,24 @@
 body {
     font-family: Arial, sans-serif;
-    background-color: #2c2c2c; 
+    background-color: #2c2c2c;
     margin: 0;
     padding: 0;
-    display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
 }
 
 header {
     background-color: #007BFF;
     color: white;
     padding: 1rem;
-    width: 100%;
     text-align: center;
+    margin-top: 10px;
 }
 
 h1 {
     margin: 0;
+    font-size: 24px;
 }
 
 button {
@@ -48,7 +49,13 @@ button:hover {
 main {
     width: 100%;
     max-width: 600px;
-    margin: 20px auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    gap: 10px; 
+    
+    
 }
 
 form {
@@ -59,6 +66,20 @@ form {
     display: flex; 
     flex-direction: column; 
     align-items: center; 
+    width: 100%; 
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.form-container {
+	max-width: 400px; 
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	overflow: hidden; 
 }
 
 label, input, select {
@@ -79,6 +100,17 @@ input, select {
     margin-bottom: 10px;
 }
 
+.productos-container {
+	max-width: 400px; 
+	margin: 40px auto;
+	padding: 20px;
+	background-color: #fff;
+	border-radius: 8px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	text-align: center;
+	overflow: hidden; 
+}
+
 .producto input {
     width: 45%;
 }
@@ -86,20 +118,33 @@ input, select {
 #lista-compras {
     display: flex;
     flex-direction: column; 
-    align-items: center; 
-    margin: 20px 0; 
-    width: 100%; 
-    padding: 0 10px; 
+    align-items: center;
+    width: 100%;
 }
+
+.titulo-form {
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 8px 8px 0 0;
+}
+
+.titulo-producto {
+	background-color: #007BFF;
+	color: #fff;
+	padding: 10px 0;
+	border-radius: 8px 8px 0 0;
+}
+
 
 .card {
     background-color: #fff;
     color: #333;
     padding: 20px;
-    margin: 10px 0;
-    border-radius: 15px; 
-    width: 100%; 
-    max-width: 600px; 
+    margin: 20px 0; 
+    border-radius: 15px;
+    width: 100%;
+    max-width: 500px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s;
 }
@@ -145,15 +190,18 @@ input, select {
     color: #333;
 }
 
+
 /* Productos html */
 #productosContainer {
     background-color: white;
     width: 100%;
     max-width: 400px;
     border-radius: 15px;
-    padding: 20px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    margin-top: 20px; 
+    margin: 20px auto; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .producto {
